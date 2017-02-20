@@ -27,4 +27,10 @@ app.get("/volunteer-management",function(req,res){
 app.get("/portfolio",function(req,res){
 	res.render("portfolio");
 });
+app.get("/about-us",function(req,res){
+	res.render("about-us");
+});
+app.get("/contact-us",function(req,res){
+	res.render("contact-us");
+});
 app.listen(8080);

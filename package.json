@@ -1,0 +1,26 @@
+{
+  "name": "millereventmanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abomina/millereventmanagement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abomina/millereventmanagement/issues"
+  },
+  "homepage": "https://github.com/abomina/millereventmanagement#readme"
+}

@@ -8,12 +8,33 @@ body{
 ul li a{
 	color: #ffffff;
 }
+#map{
+	width: 100px;
+	height: 100px;
+}
+.panelContact{
+	font-size: 14px;
+	margin-top: 30px;
+}
+.panelWelcome{
+	margin-top: 30px;
+}
+.panelAbout{
+	height: 400px;
+}
+.no-padding{
+	padding-right: 0px!important;
+	padding-left: 0px!important;
+}
+.imageAbout{
+	width: 100%;
+}
 .icon-bar{
 	background-color: #fff;
 }
 .paneles{
 	font-size: 10px;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .panelesService{
 	font-size: 16px;
