@@ -1,0 +1,92 @@
+extends ./layout.jade
+block contenido
+	div(id="myCarousel" class="carousel slide" data-ride="carousel")
+		div(class="carousel-inner" role="listbox")
+			div(class="item active")
+				img(src="img/1.jpg" alt="")
+			div(class="item")
+				img(src="img/2.jpg" alt="")
+			div(class="item")
+				img(src="img/3.jpg" alt="")
+			div(class="item")
+				img(src="img/4.jpg" alt="")
+		a(class="left carousel-control" href="#myCarousel" role="button" data-slide="prev")
+			span(class="glyphicon glyphicon-chevron-left" aria-hidden="true")
+			span(class="sr-only").
+				Previous
+		a(class="right carousel-control" href="#myCarousel" role="button" data-slide="next")
+			span(class="glyphicon glyphicon-chevron-right" aria-hidden="true")
+			span(class="sr-only").
+				Next
+	div(class="container-fluid")
+		div(class="col-md-3 paneles")
+			div(id="myCarousel2" class="carousel slide")
+				ol(class="carousel-indicators puntos")
+					li(data-target="#myCarousel2" data-slide-to="0" class="active")
+					li(data-target="#myCarousel2" data-slide-to="1" class="")
+					li(data-target="#myCarousel2" data-slide-to="2" class="")
+					li(data-target="#myCarousel2" data-slide-to="3" class="")
+				div(class="carousel-inner" role="listbox")
+					div(class="item active")
+						div(class="panel panel-default col-md-9 no-float center-block panelCompleto")
+							div(class="panel-body").
+								#[img(src="img/planner.gif" class="img-thumbnail peque")]
+								#[b Planning your Event].
+								Contact us for questions regarding the needs of your event
+							div(class="panel-footer")
+								a(href="").
+									Find out who we are »
+					div(class="item")
+						div(class="panel panel-default col-md-9 no-float center-block panelCompleto")
+							div(class="panel-body").
+								#[img(src="img/lock.gif" class="img-thumbnail peque")]
+								#[b More then Security].
+								MEM can create your events inner logistics to optimise your event's functionality.
+							div(class="panel-footer")
+								a(href="/security").
+									Find out who we are »
+					div(class="item")
+						div(class="panel panel-default col-md-9 no-float center-block panelCompleto")
+							div(class="panel-body").
+								#[img(src="img/star.gif" class="img-thumbnail peque")]
+								#[b Special events].
+								We can fill any position or requirement for any special event request.
+							div(class="panel-footer")
+								a(href="").
+									Find out who we are »
+					div(class="item")
+						div(class="panel panel-default col-md-9 no-float center-block panelCompleto")
+							div(class="panel-body").
+								#[img(src="img/package.gif" class="img-thumbnail peque")]
+								#[b All-in-One package Our].
+								large and qualified employee database is able to staff any type of position needs.
+							div(class="panel-footer")
+								a(href="").
+									Find out who we are »
+		div(class="col-md-3 paneles")
+			div(class="panel panel-default col-md-12 no-float center-block")
+				div(class="panel-body")
+					b Welcome to Our Website
+					p.
+						Miller Event Mangement is an all-in-one event managament company. As you look through our website, you will find that Miller Event Management (MEM) is a perfect choice for your venue or event. With a focus for Special Events in California, MEM is continuouly growing and taking on new venues. Miller Event Management will bring professional quality and performace to your event, no matter how big or small it may be.
+		div(class="col-md-3 paneles")
+			div(id="myCarousel3" class="carousel slide")
+				ol(class="carousel-indicators puntos")
+					li(data-target="#myCarousel3" data-slide-to="0" class="active")
+					li(data-target="#myCarousel3" data-slide-to="1" class="")
+					li(data-target="#myCarousel3" data-slide-to="2" class="")
+				div(class="carousel-inner" role="listbox")
+					div(class="item active")
+						img(src="img/LZ.jpg" alt="" class="col-md-9 no-float center-block")
+					div(class="item")
+						img(src="img/wolfhill.jpg" alt="" class="col-md-9 no-float center-block")
+					div(class="item")
+						img(src="img/avila.jpg" alt="" class="col-md-9 no-float center-block")
+		div(class="col-md-3 paneles")
+			div(class="panel panel-default col-md-12 no-float center-block")
+				div(class="panel-body")
+					img(src="img/tests.gif")
+					span(class="cita").
+						The hiring of Miller Event Management provides better coordination of all elements...
+					p(class="autor").
+						- CEO and general manager for Mazda Raceway Laguna Seca

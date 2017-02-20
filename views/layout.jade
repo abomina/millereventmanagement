@@ -1,0 +1,78 @@
+doctype html
+html(lang="en")
+	head
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		
+	body
+		header
+			div(class="container-fluid header")
+				div(class="col-md-3 vcenter no-float")
+					img(src="img/logoblanco.png" class="center-block")
+				div(class="col-md-9 col-xs-12 vcenter no-float")
+					div(class="bs-example")
+						nav(id="myNavbar" class="navbar" role="navigation")
+							div
+								div(class="navbar-header")
+									button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+										span(class="sr-only").
+											Toggle navigation
+										span(class="icon-bar")
+										span(class="icon-bar")
+										span(class="icon-bar")
+									a(class="navbar-brand" href="#")
+										h6 
+								div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+									ul(class="nav navbar-nav navbar-right")
+										li
+											a(href="/").
+												HOME PAGE
+										li(class="dropdown")
+											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
+												SERVICE
+												#[b(class="caret")]
+											ul(class="dropdown-menu")
+												li
+													a(href="/security").
+														SECURITY
+												li
+													a(href="/parking-traffic").
+														PARKING & TRAFFIC
+												li
+													a(href="/ticket-gate-operations").
+														TICKET GATE OPERATIONS
+												li
+													a(href="/camping-management").
+														CAMPING MANAGEMENT
+												li
+													a(href="/volunteer-management").
+														VOLUNTEER MANAGMENT
+										li
+											a(href="/portfolio").
+												PORTFOLIO
+										li
+											a(href="#").
+												ABOUT US
+										li(class="dropdown")
+											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
+												CONTACT US
+												#[b(class="caret")]
+											ul(class="dropdown-menu")
+												li
+													a(href="#").
+														CONTACT OUR COMPANY
+												li
+													a(href="#").
+														EVENTS FEEDBACK
+												li
+													a(href="#").
+														REQUEST FOR QUOTES
+												li
+													a(href="#").
+														APPLICATION FOR EMPLOYMENT
+		article
+			block contenido

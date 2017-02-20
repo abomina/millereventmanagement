@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "TRAJAX";
+    src: url(../template/fonts/TRAJAX.ttf) format("truetype");
+}
+body{
+	background-color: #fbfbfb;
+}
+ul li a{
+	color: #ffffff;
+}
+.icon-bar{
+	background-color: #fff;
+}
+.paneles{
+	font-size: 10px;
+	margin-top: 50px;
+}
+.panelesService{
+	font-size: 16px;
+	margin-top: 2%;
+}
+.headService{
+	font-size: 16px;
+	margin-top: 2%;
+}
+.titulos{
+	font-size: 10px;
+}
+.cita{
+	font-style: italic;
+	font-size: 18px;
+}
+.autor{
+	font-size: 12px;
+	padding-top: 10px;	
+}
+.peque{
+	float: left;
+	margin-right: 20px;
+}
+.dropdown-menu>li>a{
+	color: #ffffff!important;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	color: #23527c!important;
+	background-color: #fff!important;
+}
+.nav>li>a:hover {
+    background-color: #fff!important;
+}
+.nav>li>a:focus, menu>li>a:hover {
+    color: #23527c;
+    text-decoration: none;
+    background-color: #ffffff!important;
+}
+
+.puntos li{
+	background-color: #172F3C;
+}
+.puntoEvents{
+	bottom: 0px!important;
+}
+.carousel-indicators .active{
+	background-color: #172F3C!important;
+}
+.carousel-indicators li {
+	border-color: #172F3C!important;
+}
+.panelCompleto{
+	padding-bottom: 40px;
+}
+.dropdown-menu{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	/* IE10+ */ 
+background-image: -ms-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right top, left bottom, color-stop(50, #172F3C), color-stop(300, #ffffff));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to bottom left, #172F3C 50%, #ffffff 300%);
+}
+.navbar{
+	margin-bottom: 0px !important;
+}
+.vcenter{
+	display: inline-block;
+    vertical-align: middle;
+}
+.no-float{
+	 float: none!important;
+}
+.owl-carousel .owl-wrapper-outer {
+	width: 100%!important;
+	height: 300px;
+}
+.header{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* IE10+ */ 
+	background-image: -ms-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, right top, left bottom, color-stop(50, #172F3C), color-stop(300, #ffffff));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
+
+	/* W3C Markup */ 
+	background-image: linear-gradient(to bottom left, #172F3C 50%, #ffffff 300%);
+
+
+}
+.slider{
+	width: 100%;
+	height: auto;
+}
