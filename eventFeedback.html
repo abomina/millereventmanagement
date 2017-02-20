@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang=""> 
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="description" content="">
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Event</title>
+                            <link rel="stylesheet" href="css/bootstrap.min.css">
+                            <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+                            <link rel="stylesheet" href="css/main.css">
+                            <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>	
+    </head>
+    <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">1</span>
+            <span class="icon-bar">2</span>
+            <span class="icon-bar">3</span>
+          </button>
+          <a class="navbar-brand" href="#">Event Feedback fields:</a>
+        </div>
+      </div>
+    </nav>
+<br>
+<br>
+<br>
+    <div class="jumbotron">
+	    	<div class="row">
+	        	<div class="col-md-6 col-md-offset-3">
+	        		<form>
+	        			<div class="col-sm-6">
+		         		<p><label for="name">Name</label>
+		    				<input type="text" class="form-control" id="name" placeholder="Name"></p>
+		    	 		<p><label for="email">Email address</label>
+		    				<input type="email" class="form-control" id="email" 
+		    				placeholder="Email" 
+		    				pattern="^[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$" 
+		    				title="that email address is invalid"></p>
+		    	 		<p><label for="tel">Phone</label>
+		    				<input type="tel" class="form-control" id="tel" placeholder="Phone"></p>
+		    			<p><label for="event">Event Name</label>
+		    					<input type="text" class="form-control" id="event" placeholder="Event Name"></p>
+		    			<p><label for="feedbackEvent">Feedback </label>	
+		    					<textarea class="form-control" rows="3"></textarea>	</p>			
+		    			</div>
+		    			<div class="col-sm-6">		
+		    			<p><label for="event">Event Location:</label></p>
+		    						<p><label for="nameEvent">Name</label>
+		    							<input type="text" class="form-control" id="nameEvent" placeholder="Name" required></p>
+		    						<p><label for="addressEvent">Address</label>
+		    							<input type="text" class="form-control" id="addressEvent" placeholder="Address" required="s"></p>
+		    						<p><label for="cityEvent">City</label>
+		    							<input type="text" class="form-control" id="cityEvent" placeholder="City" required></p>	
+		    						<p><label for="stateEvent">State</label>
+		    							<input type="text" class="form-control" id="stateEvent" placeholder="State" required></p>
+		    						<p><label for="zipEvent">Zip</label>
+		    							<input type="text" class="form-control" id="zipEvent" placeholder="Zip" required></p>
+		    				</div>				
+	    			</form>	
+	    							<p><center><button type="submit" class="btn btn-success">Submit</button></center></p>
+		    	</div>	
+	        </div>
+	    <footer>
+	    </div>
+        <a href="http://insolex.com/">&copy; Insolex 2017</a>
+      	</footer>
+
+    </body>
+</html>
