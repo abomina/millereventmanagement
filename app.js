@@ -33,4 +33,10 @@ app.get("/about-us",function(req,res){
 app.get("/contact-us",function(req,res){
 	res.render("contact-us");
 });
+app.get("/event-feedback",function(req,res){
+	res.render("event-feedback");
+});
+app.get("/request-for-quote",function(req,res){
+	res.render("request-for-quote");
+});
 app.listen(8080);
