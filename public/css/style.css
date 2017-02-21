@@ -5,6 +5,11 @@
 body{
 	background-color: #fbfbfb;
 }
+
+#area {
+  width: 150px;
+  height: 150px;
+}
 .navbar-nav a{
 	color: #ffffff;
 }
