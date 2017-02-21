@@ -5,14 +5,8 @@
 body{
 	background-color: #fbfbfb;
 }
-ul li a{
+.navbar-nav a{
 	color: #ffffff;
-}
-
-
-#area {
-  width: 150px;
-  height: 150px;
 }
 
 #face{
@@ -81,10 +75,10 @@ ul li a{
 	float: left;
 	margin-right: 20px;
 }
-.dropdown-menu>li>a{
+.principal>li>a{
 	color: #ffffff!important;
 }
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+.principal>li>a:focus, .principal>li>a:hover{
 	color: #23527c!important;
 	background-color: #fff!important;
 }
@@ -97,8 +91,8 @@ ul li a{
     background-color: #ffffff!important;
 }
 .puntos{
-	bottom: 0px;
-	margin-bottom: 0px;
+	bottom: 0px!important;
+	margin-bottom: 10px;
 }
 .puntos li{
 	background-color: #172F3C;
@@ -117,7 +111,7 @@ ul li a{
 	padding-bottom: 40px;
 	margin-top: 10px;
 }
-.dropdown-menu{
+.principal{
 	padding-top: 30px;
 	padding-bottom: 30px;
 	/* IE10+ */ 
