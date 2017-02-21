@@ -37,9 +37,6 @@ ul li a{
 	font-size: 14px;
 	margin-top: 30px;
 }
-.panelWelcome{
-	margin-top: 30px;
-}
 .panelAbout{
 	height: 400px;
 }
@@ -54,7 +51,7 @@ ul li a{
 	background-color: #fff;
 }
 .paneles{
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .panelesService{
 	font-size: 16px;
@@ -93,7 +90,10 @@ ul li a{
     text-decoration: none;
     background-color: #ffffff!important;
 }
-
+.puntos{
+	bottom: 0px;
+	margin-bottom: 0px;
+}
 .puntos li{
 	background-color: #172F3C;
 }
@@ -107,7 +107,9 @@ ul li a{
 	border-color: #172F3C!important;
 }
 .panelCompleto{
+	height: 235px;
 	padding-bottom: 40px;
+	margin-top: 10px;
 }
 .dropdown-menu{
 	padding-top: 30px;
