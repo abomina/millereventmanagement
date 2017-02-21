@@ -5,7 +5,6 @@
 body{
 	background-color: #fbfbfb;
 }
-
 #area {
   width: 150px;
   height: 150px;
@@ -138,6 +137,7 @@ background-image: -webkit-linear-gradient(top right, #172F3C 50%, #ffffff 300%);
 background-image: linear-gradient(to bottom left, #172F3C 50%, #ffffff 300%);
 }
 .navbar{
+	position: inherit !important;
 	margin-bottom: 0px !important;
 }
 .vcenter{
