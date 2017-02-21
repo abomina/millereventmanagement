@@ -8,6 +8,12 @@ body{
 ul li a{
 	color: #ffffff;
 }
+.columnasRequest{
+	padding: 3px;
+}
+.panelRequest{
+	margin-top: 30px;
+}
 #map{
 	width: 100px;
 	height: 100px;

@@ -1,9 +1,10 @@
 var express = require("express");
-
+var bodyParser = require("body-parser")
 var app = express();
 
 app.set("view engine", "jade");
-
+app.use(bodyParser.json()); //json
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/",function(req,res){
@@ -38,5 +39,8 @@ app.get("/event-feedback",function(req,res){
 });
 app.get("/request-for-quote",function(req,res){
 	res.render("request-for-quote");
+});
+app.get("/application-for-employment",function(req,res){
+	res.render("application-for-employment");
 });
 app.listen(8080);

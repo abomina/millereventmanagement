@@ -1,0 +1,51 @@
+extends ./layout.jade
+block contenido
+	div(class="container-fluid")
+		div(class="col-md-3 panelContact")
+			div(class="panel panel-default")
+				div(class="panel-heading")
+					b.
+						Contact Details
+				div(class="panel-body")
+					p
+						b Miller Event Management
+					p
+						b Address<br>
+						|3563 Sueldo Street, Suite L, San Luis Obispo, Ca 93401
+					p
+						b Telephone<br>
+						|(805) XXX-XXXX<br>
+						b Fax<br>
+						|(805) XXX-XXXX<br>
+					p
+						b E-mail<br>
+						|millereventmanagement@gmail.com
+					p
+						b Location
+						div(id="map")
+					
+		div(class="col-md-4 panelContact")
+			div(class="panel panel-default")
+				div(class="panel-heading")
+					b.
+						Employment Application Form
+				div(class="panel-body")
+					p.
+						Use the attachment below to download and upload your resume
+					a(href="docs/emp.pdf" download="Application for Employment form")
+						span(class="glyphicon glyphicon-cloud-download" aria-hidden="true")
+							|Download
+		div(class="col-md-5 panelContact")
+			div(class="panel panel-default")
+				div(class="panel-heading")
+					b.
+						Application
+				div(class="panel-body")
+					form(class="form-horizontal")
+						div(class="form-group")
+							label(for="InputFile" class="col-md-3")
+								|File input
+							div(class="col-md-9")
+								input(type="file" class="form-control" id="InputFile" name="InputFile" required)
+						button(type="submit" class="btn btn-default no-float center-block")
+							|Submit
