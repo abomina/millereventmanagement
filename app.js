@@ -43,4 +43,9 @@ app.get("/application-for-employment",function(req,res){
 	res.render("application-for-employment");
 });
 
+app.get("/area",function(req,res){
+	res.render("area");
+});
+
+
 app.listen(8080);

@@ -9,6 +9,12 @@ ul li a{
 	color: #ffffff;
 }
 
+
+#area {
+  width: 150px;
+  height: 150px;
+}
+
 #face{
 	color:#3b5998;
 }
