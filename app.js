@@ -42,10 +42,11 @@ app.get("/request-for-quote",function(req,res){
 app.get("/application-for-employment",function(req,res){
 	res.render("application-for-employment");
 });
-
 app.get("/area",function(req,res){
 	res.render("area");
 });
-
+app.get("/contact-directory",function(req,res){
+	res.render("contact-directory");
+});
 
 app.listen(8080);
