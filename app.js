@@ -33,4 +33,7 @@ app.get("/about-us",function(req,res){
 app.get("/contact-us",function(req,res){
 	res.render("contact-us");
 });
+app.get("/area",function(req,res){
+	res.render("area");
+});
 app.listen(8080);
