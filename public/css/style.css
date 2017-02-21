@@ -8,15 +8,30 @@ body{
 ul li a{
 	color: #ffffff;
 }
-.columnasRequest{
-	padding: 3px;
+
+#face{
+	color:#3b5998;
 }
-.panelRequest{
-	margin-top: 30px;
+
+#twitter{
+	color:#4099FF;
 }
+
+#linkedin{
+	color:#0e76a8;
+}
+
 #map{
 	width: 100px;
 	height: 100px;
+}
+.iconosredes{
+	 margin-left:5px;
+     margin-right:5px;
+}
+.numberphone{
+	color: #ffffff !important;
+	text-align: center;
 }
 .panelContact{
 	font-size: 14px;
