@@ -3,15 +3,24 @@ html(lang="en")
 	head
 		link(rel="stylesheet" href="css/style.css")
 		link(rel="stylesheet" href="css/@media.css")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		//JQUERY 3.1.1
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
-		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+		//bootstrap
+		script(type="text/javascript" src="js/moment.js")
+		script(type="text/javascript" src="js/transition.js")
+		script(type="text/javascript" src="js/collapse.js")
+		script(type="text/javascript" src="js/bootstrap.min.js")
+		script(type="text/javascript" src="js/bootstrap-datetimepicker.min.js")
+		link(rel="stylesheet" href="css/bootstrap.min.css")
+		link(rel="stylesheet" href="css/bootstrap-datetimepicker.min.css")
+		//fontawesome
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		
 		link(rel="stylesheet" href="css/dropdowns-enhancement.css")
 		script(src="js/dropdowns-enhancement.js")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css")
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js")
+		script(src="js/function.js")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		
 	body
@@ -48,7 +57,7 @@ html(lang="en")
 											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
 												SERVICES
 												#[b(class="caret")]
-											ul(class="dropdown-menu")
+											ul(class="dropdown-menu principal")
 												li
 													a(href="/security").
 														SECURITY
@@ -80,7 +89,7 @@ html(lang="en")
 											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
 												PORTFOLIO
 												#[b(class="caret")]
-											ul(class="dropdown-menu")
+											ul(class="dropdown-menu principal")
 												li
 													a(href="/portfolio").
 														FAST EVENT
@@ -97,7 +106,7 @@ html(lang="en")
 											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
 												ABOUT US
 												#[b(class="caret")]
-											ul(class="dropdown-menu")
+											ul(class="dropdown-menu principal")
 												li
 													a(href="/about-us").
 														ABOUT-US
@@ -108,7 +117,7 @@ html(lang="en")
 											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
 												CONTACT US
 												#[b(class="caret")]
-											ul(class="dropdown-menu")
+											ul(class="dropdown-menu principal")
 												li
 													a(href="contact-directory").
 														CONTACT DIRECTORY
@@ -125,7 +134,7 @@ html(lang="en")
 											a(href="#" data-toggle="dropdown" class="dropdown-toggle").
 												QUICK TOOLS
 												#[b(class="caret")]
-											ul(class="dropdown-menu")
+											ul(class="dropdown-menu principal")
 												li
 													a(href="#").
 														PAY OF TIME
