@@ -18,8 +18,9 @@ block contenido
 						b Fax<br>
 						|(805) XXX-XXXX<br>
 					p
-						b E-mail<br>
-						|millereventmanagement@gmail.com
+						b 
+							a(href="mailto:millereventmanagement@gmail.com" target="_blank")
+								|Email us
 					p
 						b Location
 						div(id="map")
@@ -41,7 +42,7 @@ block contenido
 					b.
 						Application
 				div(class="panel-body")
-					form(class="form-horizontal")
+					form(class="form-horizontal" action="/sendEmployee" method="POST")
 						div(class="form-group")
 							label(for="InputFile" class="col-md-3")
 								|File input

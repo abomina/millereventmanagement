@@ -1,10 +1,12 @@
 var express = require("express");
-
+var bodyParser = require("body-parser");
+var mailer = require("nodemailer");
 var app = express();
 
-app.set("view engine", "jade");
-
 app.use(express.static("public"));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.set("view engine", "jade");
 
 app.get("/",function(req,res){
 	res.render("index");
@@ -48,5 +50,7 @@ app.get("/area",function(req,res){
 app.get("/contact-directory",function(req,res){
 	res.render("contact-directory");
 });
-
+app.post("/sendEmployee",function(req,res){
+	console.log("archivo: "+req.body.InputFile);
+});
 app.listen(8080);
