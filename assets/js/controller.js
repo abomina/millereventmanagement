@@ -20,6 +20,14 @@ app.config(function($routeProvider, $locationProvider) {
 
     })
 
+    .when('/pastevents', {
+
+        templateUrl : 'views/pastevents.html',
+
+        controller: "Controller"
+
+    })
+
     //$locationProvider.html5Mode(true);
 
 });
