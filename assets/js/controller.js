@@ -80,7 +80,7 @@ app.controller("carousel",function($scope){
     autoPlay:true,
     loop:true,
     singleItem: true,
-    autoWidth:true,
+    responsiveClass:true,
     responsive:{
           0:{
               items:1,
@@ -93,7 +93,10 @@ app.controller("carousel",function($scope){
           1000:{
               items:1,
               nav:true,
-              loop:false
+          },
+          1200:{
+              items:1,
+              nav:true,
           }
       }
   });
@@ -101,9 +104,9 @@ app.controller("carousel",function($scope){
   $('.owl-prev').html("<span class='fa fa-chevron-left izq'><span>");
   //$('.sw-btn-next').html("<div class='pasos'><button type='submit'>SIGUIENTE PASO<img src='./images/flechaDerBlanca.png'></button></div>");
   $('.owl-next').html("<span class='fa fa-chevron-right der'><span>");
-  setInterval(function(){
+ /* setInterval(function(){
  $(".owl-carousel").each(function(){
     $(this).data('owlCarousel').updateVars();
  });
-},1500);
+},1500);*/
 });
