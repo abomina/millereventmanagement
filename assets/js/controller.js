@@ -27,6 +27,13 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
+    .when('/contactcompany', {
+
+        templateUrl : 'views/contactcompany.php',
+
+        controller: "Controller"
+
+    })
 
     //$locationProvider.html5Mode(true);
 
@@ -75,9 +82,7 @@ app.controller("Controller",function($scope,$location){
                       }
 
               });
-
     }
-
 });
 app.controller("carousel",function($scope){
   var owlG = $("#owl-galery");
