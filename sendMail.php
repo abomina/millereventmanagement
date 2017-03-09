@@ -1,36 +1,21 @@
-<?php
-require_once('PHPMailer/class.phpmailer.php');
+<?php 
 
-$correo = new PHPMailer(); //Creamos una instancia en lugar usar mail()
-//Usamos el SetFrom para decirle al script quien envia el correo
-$correo->SetFrom("juanescobar.90@gmail.com", "");
- 
-//Usamos el AddReplyTo para decirle al script a quien tiene que responder el correo
-$correo->AddReplyTo("juanescobar.90@gmail.com","");
- 
-//Usamos el AddAddress para agregar un destinatario
-$correo->AddAddress("desarrollo@studentshouse.com.co", "Robot");
- 
-//Ponemos el asunto del mensaje
-$correo->Subject = "Contacto";
+  $to  = 'juanescobar.90@gmail.com'; 
 
-/*
- * Si deseamos enviar un correo con formato HTML utilizaremos MsgHTML:
- * $correo->MsgHTML("<strong>Mi Mensaje en HTML</strong>");
- * Si deseamos enviarlo en texto plano, haremos lo siguiente:
- * $correo->IsHTML(false);
- * $correo->Body = "Mi mensaje en Texto Plano";
- */
+  $subject = 'Formulario Monte Rizzo CFC';
 
-$correo->MsgHTML("asdasdasd");
- 
-//Si deseamos agregar un archivo adjunto utilizamos AddAttachment
-//$correo->AddAttachment("images/phpmailer.gif");
- 
-//Enviamos el correo
-if(!$correo->Send()) {
-  echo "Hubo un error: " . $correo->ErrorInfo;
-} else {
-  echo "<b>Mensaje enviado con exito. <br>Espera nuestra respuesta.</b>";
-}
+  // message
+	$message = '
+	<h2>Acaba de llegar un correo electrónico diligenciado a través del formulario del proyecto Monte Rizzo CFC :';
+
+	error_log($message);
+
+	// To send HTML mail, the Content-type header must be set
+	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+	// Mail it
+	$estado = mail($to, $subject, $message, $headers);
+
+	echo $estado;
 ?>
