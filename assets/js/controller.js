@@ -74,6 +74,13 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
+    .when('/eventsfeedback', {
+
+        templateUrl : 'views/eventsfeedback.php',
+
+        controller: "Controller"
+
+    })
     //$locationProvider.html5Mode(true);
 
 });
