@@ -84,6 +84,24 @@ app.controller("Controller",function($scope,$location){
               });
     }
 });
+app.controller("contactCompany",function($scope){
+  $scope.validate=function(){
+    var parametros = {
+      "name" : $scope.nombre,
+      "email" : $scope.email,
+      "company" : $scope.company,
+      "message" : $scope.message
+    };
+    $.ajax({
+      data:  parametros,
+      url:   'sendEmail.php',
+      type:  'post',
+      success:  function (response) {
+        $("#resultado").html(response);
+      }
+    });
+  }
+});
 app.controller("carousel",function($scope){
   var owlG = $("#owl-galery");
   owlG.owlCarousel({
