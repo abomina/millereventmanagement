@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngRoute","ng-sweet-alert"]);
+var app = angular.module("myApp", ["ngRoute","ng-sweet-alert","angularjs-dropdown-multiselect"]);
 
 app.config(function($routeProvider, $locationProvider) {
 
@@ -34,13 +34,13 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
-    /*.when('/sendmail', {
+    .when('/requestforquotes', {
 
-        templateUrl : 'sendMail.php',
+        templateUrl : 'views/requestforquotes.php',
 
         controller: "Controller"
 
-    })*/
+    })
 
 
     .when('/aboutus', {
@@ -108,6 +108,40 @@ app.controller("Controller",function($scope,$location){
 
               });
     }
+});
+app.controller("requestforquotes",function($scope){
+  $('#datetimepicker6').datetimepicker({
+    format: 'DD/MM/YYYY'
+  });
+  $('#datetimepicker7').datetimepicker({
+      useCurrent: false, //Important! See issue #1075
+      format: 'DD/MM/YYYY'
+  });
+  $("#datetimepicker6").on("dp.change", function (e) {
+      $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+  });
+  $("#datetimepicker7").on("dp.change", function (e) {
+      $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+  });
+  $('#datetimepicker3').datetimepicker({
+              format: 'LT'
+          });
+  $('#datetimepicker4').datetimepicker({
+              format: 'LT'
+          });
+  $scope.example13model = [];
+  $scope.example13data = [
+    {id: 1, label: "Cashiers"},
+    {id: 2, label: "Crowd Control"},
+    {id: 3, label: "Parking"},
+    {id: 4, label: "Traffic Control"},
+    {id: 5, label: "Guards"},
+    {id: 5, label: "Armed Guards"}
+  ];
+  $scope.example5model = []; 
+  $scope.example5data = [ {id: 1, label: "Cashiers"}, {id: 2, label: "Crowd Control"}, {id: 3, label: "Parking"}, {id: 4, label: "Traffic Control"}, {id: 5, label: "Guards"}, {id: 6, label: "Armed Guards"}]; 
+  $scope.example5settings = {}; 
+  $scope.example5customTexts = {buttonDefaultText: 'Type of services needed'};
 });
 app.controller("contactCompany",function($scope,$http,$window){
   console.log($window.location);
