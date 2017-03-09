@@ -28,6 +28,24 @@ app.config(function($routeProvider, $locationProvider) {
 
     })
 
+
+    .when('/aboutus', {
+
+        templateUrl : 'views/aboutus.html',
+
+        controller: "Controller"
+
+    })
+
+
+    .when('/area', {
+
+        templateUrl : 'views/area.html',
+
+        controller: "Controller"
+
+    })
+
     //$locationProvider.html5Mode(true);
 
 });

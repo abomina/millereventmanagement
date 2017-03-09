@@ -10,6 +10,16 @@
 /* Reset */
 
 /*Insolex init*/
+.imageAbout{
+	width: 100%;
+}
+
+#area {
+  display: block;
+  margin: 0 auto;	
+  width: 220px;
+  height: 220px;
+}
 
 #imgCarousel {
   width: 450px;
