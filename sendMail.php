@@ -1,6 +1,6 @@
 <?php 
 
-  $to  = 'juanescobar.90@gmail.com'; 
+  $to  = 'desarrollo@studentshouse.com.co'; 
 
   $subject = 'Formulario Monte Rizzo CFC';
 
