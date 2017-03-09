@@ -23,7 +23,7 @@
 				<!-- Break -->
 				<div class="12u$">
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="special" ng-click="validate()"/></li>
+						<li><input type="button" value="Send Message" class="special" ng-click="validate()"/></li>
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
 				</div>

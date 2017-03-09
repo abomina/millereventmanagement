@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ["ngRoute","ng-sweet-alert"]);
 
 app.config(function($routeProvider, $locationProvider) {
 
@@ -34,6 +34,13 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
+    /*.when('/sendmail', {
+
+        templateUrl : 'sendMail.php',
+
+        controller: "Controller"
+
+    })*/
 
     //$locationProvider.html5Mode(true);
 
@@ -84,22 +91,40 @@ app.controller("Controller",function($scope,$location){
               });
     }
 });
-app.controller("contactCompany",function($scope){
+app.controller("contactCompany",function($scope,$http,$window){
+  console.log($window.location);
   $scope.validate=function(){
-    var parametros = {
-      "name" : $scope.nombre,
-      "email" : $scope.email,
-      "company" : $scope.company,
-      "message" : $scope.message
-    };
-    $.ajax({
-      data:  parametros,
-      url:   'sendEmail.php',
-      type:  'post',
-      success:  function (response) {
-        $("#resultado").html(response);
-      }
-    });
+    var request = $http({
+        method: "post",
+        url: "sendMail.php",
+        data: {
+            name : $scope.nombre,
+            email : $scope.email,
+            company : $scope.company,
+            message : $scope.message
+        },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    });
+    /* Check whether the HTTP Request is Successfull or not. */
+    request.success(function (data) {
+        console.log(data);
+        $scope.sweet = {};
+        $scope.sweet.option = {
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Yes, delete it!",
+            cancelButtonText: "No, cancel plx!",
+            closeOnConfirm: false,
+            closeOnCancel: false 
+        }
+    });
+    //}
+    //else {
+    //    $scope.message = "You have Filled Wrong Details! Error: " + error;
+    //}
   }
 });
 app.controller("carousel",function($scope){
