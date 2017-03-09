@@ -34,13 +34,20 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
-    .when('/requestforquotes', {
+    .when('/contactdirectory', {
+
+        templateUrl : 'views/contactdirectory.html',
+
+        controller: "Controller"
+
+    })
+    /*.when('/sendmail', {
 
         templateUrl : 'views/requestforquotes.php',
 
         controller: "Controller"
 
-    })
+    })*/
 
 
     .when('/aboutus', {
@@ -60,6 +67,13 @@ app.config(function($routeProvider, $locationProvider) {
 
     })
 
+    .when('/requestforquotes', {
+
+        templateUrl : 'views/requestforquotes.php',
+
+        controller: "Controller"
+
+    })
     //$locationProvider.html5Mode(true);
 
 });
