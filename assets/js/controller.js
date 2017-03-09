@@ -34,6 +34,14 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
+
+    .when('/contactdirectory', {
+
+        templateUrl : 'views/contactdirectory.html',
+
+        controller: "Controller"
+
+    })
     /*.when('/sendmail', {
 
         templateUrl : 'sendMail.php',
