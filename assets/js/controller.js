@@ -41,6 +41,18 @@ app.config(function($routeProvider, $locationProvider) {
         controller: "Controller"
 
     })
+
+    .when('/application-for-employment', {
+
+        templateUrl : 'views/application-for-employment.php',
+
+        controller: "Controller"
+
+    })
+
+
+
+
     /*.when('/sendmail', {
 
         templateUrl : 'views/requestforquotes.php',
@@ -239,3 +251,4 @@ app.controller("carousel",function($scope){
  });
 },1500);*/
 });
+
