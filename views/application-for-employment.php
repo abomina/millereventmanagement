@@ -1,4 +1,5 @@
   <section>
+  <br>
   <div class="content">
 		<header class="box">
 			<h2><center>Application For Employment</center></h2>
@@ -32,7 +33,7 @@
             <h5>
             	<input type="file" name="file" uploader-model="file">
             <center>	
-             	<input type="submit" value="Enviar"> 
+             	<input type="submit" value="Send"> 
             </center></h5>
             </form>
         </div>

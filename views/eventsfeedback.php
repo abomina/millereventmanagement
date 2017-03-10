@@ -61,7 +61,7 @@
 	<div class="row uniform">
 		<div class="12u$">
 			<ul class="actions">
-				<li><input type="submit" value="Send Request" class="special" /></li>
+				<li><input type="submit" value="Send Feedback" class="special" /></li>
 				<li><input type="reset" value="Reset" /></li>
 			</ul>
 		</div>
