@@ -50,7 +50,13 @@ app.config(function($routeProvider, $locationProvider) {
 
     })
 
+    .when('/referafriend', {
 
+        templateUrl : 'views/referafriend.php',
+
+        controller: "Controller"
+
+    })
 
 
     /*.when('/sendmail', {
