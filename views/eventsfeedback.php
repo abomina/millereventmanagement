@@ -1,6 +1,8 @@
-<form method="post" style="padding-top: 50px;"  ng-controller="requestforquotes">
-	<h3>Event Feedback</h3>
-	<hr class="major">
+	<br>
+	<header class="box">
+			<h2><center>Event Feedback</center></h2>
+	</header>
+<form method="post" style="padding-top: 10px;"  ng-controller="requestforquotes">
 	<div class="row uniform">
 		<div class="6u 12u$(medium)">
 			<div class="row uniform">

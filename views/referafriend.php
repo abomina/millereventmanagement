@@ -1,6 +1,9 @@
-<div class="row" style="padding-top: 50px;">
+	<br>
+	<header class="box">
+			<h2><center>Refer a Friend</center></h2>
+	</header>
+<div class="row" style="padding-top: 10px;">
 	<div class="6u 12u$(small)">
-		<h2 id="content">Refer a Friend</h2>
 		<p>Fill in your name and e-mail(so your friends know it's from you, not spam) Add the e-mail address of the person(s) you wish to tell about Click the send button</p>
 	</div>
 	<div class="6u 12u$(small)" ng-controller="contactCompany">

@@ -1,5 +1,9 @@
-<form method="post" style="padding-top: 50px;"  ng-controller="requestforquotes">
-	<h3>Request for quotes</h3>
+	<br>
+	<header class="box">
+			<h2><center>Request for quotes</center></h2>
+	</header>
+
+<form method="post" style="padding-top: 10px;"  ng-controller="requestforquotes">
 	<div class="row uniform">
 		<div class="12u$">
 			<input type="text" name="event" id="event" value="" ng-model="event" placeholder="Type of Event" />

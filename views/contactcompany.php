@@ -1,7 +1,11 @@
+	<br>
+	<header class="box">
+			<h2><center>Contact Us</center></h2>
+	</header>
+
 <div class="row" style="padding-top: 50px;">
 	<div class="6u 12u$(small)">
-		<h2 id="content">Contact Us</h2>
-		<p>Miller Event Management continued success and growth offer continuous jobs throughout the year. We take great pride in what we do, and constantly strive for excellence. MEM has earned an excellent reputation for our expertise and top-quality services all over California, as well as other parts of the US. This is reflected through our diverse and extensive client base.
+		<p align="justify">Miller Event Management continued success and growth offer continuous jobs throughout the year. We take great pride in what we do, and constantly strive for excellence. MEM has earned an excellent reputation for our expertise and top-quality services all over California, as well as other parts of the US. This is reflected through our diverse and extensive client base.
 		We invite you to join a team of hard working and dedicated professionals. Our HR Department is currently accepting applications. Also, please contact us for any Quotes, Questions or Comments.</p>
 	</div>
 	<div class="6u 12u$(small)" ng-controller="contactCompany">
