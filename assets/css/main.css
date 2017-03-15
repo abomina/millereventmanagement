@@ -13,6 +13,11 @@
 .imageAbout{
 	width: 100%;
 }
+#logoban {
+  width: 100px;
+  height: 100px;
+}
+
 
 #area {
   display: block;
